@@ -1,0 +1,153 @@
+.header {
+  position: sticky;
+  z-index: 50;
+}
+
+.nav {
+  background-color: var(--bg-secondary);
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color: var(--color-secondary);
+  border-bottom:none
+}
+.nav-links {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.nav-items {
+  color: var(--color-primary);
+  margin-left: 15px;
+}
+
+.logo {
+  color: var(--color-primary);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo:hover {
+  color: #fff;
+}
+
+.nav-items:hover {
+  border-bottom: 1px solid #fff;
+  
+  color: rgb(255, 255, 0)
+}
+
+
+
+/* dark mode */
+.toggle {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 50px 20px rgba(14, 13, 13, 0.1);
+}
+
+.input-dark {
+  display: none;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
+}
+
+.icon--moon {
+  transition-delay: 200ms;
+}
+
+.icon--sun {
+  transform: scale(0);
+}
+
+#switch:checked+.icon--moon {
+  transform: rotate(360deg) scale(0);
+}
+
+#switch:checked~.icon--sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
+}
+
+
+@media(max-width: 768px) {
+
+  .dark-mode {
+    position: absolute;
+    top: 20px;
+    right: 96px;
+  }
+
+  .nav-links {
+    font-weight: 900;
+    font-size: 18px;
+    padding-top: 85px;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    color: #fff;
+    background: revert;
+    border: none;
+    font-size: 17px;
+  }
+
+}
+
+@media(max-width:425px) {
+  
+  .logo {
+    color:var(--color-primary);
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 25px;
+  }
+  .dark-mode {
+    position: absolute;
+    top: 15px;
+    right: 96px;
+  }
+  .toggle {
+    background-color: #fff;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
+  }
+  .icon {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 500ms;
+  }
+  .nav-links {
+    font-weight: 900;
+    font-size: 18px;
+    padding-top: 80px;
+    text-align: center;
+    height: 500px;
+  }
+
+ 
+
+  .navbar-toggler {
+    color: var(--bg-secondary);
+    background: revert;
+    border: none;
+    font-size: 15px;
+    padding: 4px 10px;
+  }
+
+}
