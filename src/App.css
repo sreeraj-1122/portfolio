@@ -37,7 +37,9 @@
   }
 } */
 /* #020202   */
-:root {
+
+
+.dark-theme {
   --bg-primary: hsl(0, 0%, 12%);
   --bg-secondary: hsl(0, 0%, 19%);
   --color-primary: hsl(0, 0%, 100%);
@@ -45,8 +47,14 @@
   --card-shadow: hsla(0, 0%, 0%, 0.4);
   --input-bg: hsl(0, 0%, 16%);
   --shadow-1: 10px 10px 40px var(--card-shadow);
+  --social-icon-color:#1b1bbb;
+  --social-icon-background:#fbfbfb;
+  --btn-hire: hsl(24, 74%, 58%);
+
 }
 .light-theme{
+  --btn-hire: hsl(24, 74%, 58%);
+
   --bg-primary: hsl(0, 0%, 90%);
   --bg-secondary: hsl(0, 0%, 100%);
   --color-primary: hsl(0, 0%, 12%);
@@ -54,5 +62,7 @@
   --card-shadow: hsla(0, 0%, 0%, 0.1);
   --input-bg: hsl(0, 0%, 93%);
   --shadow-1: 10px 10px 40px var(--card-shadow);
+  --social-icon-color:#1c34cf;
+  --social-icon-background:rgba(0, 0, 0, 0.15);
 
 }

@@ -1,0 +1,73 @@
+.about{
+    text-align: center;
+    color: var(--color-primary);
+    width: 100%;
+    min-height: 85vh;
+    padding-top: 20px;
+}
+
+.about-content .about-title{
+    font-size: 35px;
+    font-weight: 700;
+}
+.about-content .underline{
+    width: 80px;
+    height: 5px;
+    background-color: rgb(13, 185, 185);
+    margin: auto;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+.about-me{
+    text-align: center;
+    
+}
+.btn-hire{
+    outline: none;
+    background-color: var(--btn-hire);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+}
+.btn-cv{
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 9px 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+}
+@media(max-width:425px){
+    
+    .about-me{
+        text-align: justify;
+        
+    }
+    .btn-hire{
+       width: 100%;
+    }
+    .btn-cv{
+      width: 100%;
+    margin-left: 0;
+
+    }
+    .about-content{
+        padding: 0 20px;
+
+    }
+    
+}

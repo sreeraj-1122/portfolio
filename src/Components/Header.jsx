@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Css/Header.css";
 import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 
 function Header() {
-  const [theme, setTheme] = useState(false);
-  
-  // const changeTheme = ;
+  const [theme, setTheme] = useState("dark-theme");
+  const changeTheme=() => {
+      theme==="dark-theme"?setTheme("light-theme"):setTheme("dark-theme")
+  }
+  useEffect(()=>{
+    document.body.className=theme;
+  },[theme])
+
   return (
     <div className="header" >
-      <Navbar expand="lg" className={theme?'light-theme nav':'nav'}>
+      <Navbar expand="lg" className="nav">
         <Container>
           <Navbar.Brand href="#home" className="logo">
             SREERAJ
@@ -35,9 +40,7 @@ function Header() {
           </Navbar.Collapse>
           <div className="dark-mode">
             <label className="toggle" htmlFor="switch">
-              <input id="switch" className="input-dark" type="checkbox"  onClick={() => {
-   setTheme(!theme)
-  }}></input>
+              <input id="switch" className="input-dark" type="checkbox"  onClick={changeTheme}></input>
               <div className="icon icon--moon">
                 <svg
                   height="30"

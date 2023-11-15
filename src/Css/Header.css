@@ -1,15 +1,19 @@
 .header {
   position: sticky;
-  z-index: 50;
+  top: 0;
+  z-index: 3;
 }
-
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 0;
+}
 .nav {
   background-color: var(--bg-secondary);
+  
 }
 
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-  color: var(--color-secondary);
+  color: var(--color-primary);
   border-bottom:none
 }
 .nav-links {
@@ -34,7 +38,6 @@
 
 .nav-items:hover {
   border-bottom: 1px solid #fff;
-  
   color: rgb(255, 255, 0)
 }
 
@@ -96,10 +99,11 @@
   }
 
   .navbar-toggler {
-    color: #fff;
+    color: #fff;  
     background: revert;
     border: none;
     font-size: 17px;
+    margin-right: 20px;
   }
 
 }
@@ -110,12 +114,12 @@
     color:var(--color-primary);
     font-size: 30px;
     font-weight: 700;
-    margin-left: 25px;
+    margin-left: 35px;
   }
   .dark-mode {
     position: absolute;
     top: 15px;
-    right: 96px;
+    right: 100px;
   }
   .toggle {
     background-color: #fff;
@@ -137,7 +141,7 @@
     font-size: 18px;
     padding-top: 80px;
     text-align: center;
-    height: 500px;
+    height: 700px;
   }
 
  
@@ -148,6 +152,7 @@
     border: none;
     font-size: 15px;
     padding: 4px 10px;
+    margin-right: 20px;
   }
 
 }
