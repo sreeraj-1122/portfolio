@@ -203,3 +203,14 @@
     }
 
 }
+@media (min-width:340px) and   (max-width:424px) {
+    .skill-list,
+    .tool-list {
+        display: grid;
+        list-style: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 20px;
+        margin-bottom: 40px;
+    }
+ 
+}
