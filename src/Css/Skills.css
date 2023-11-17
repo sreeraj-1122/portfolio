@@ -196,8 +196,7 @@
 
     .skill-list,
     .tool-list {
-
-        gap: 10px;
+gap: 0;
         padding-left: 0px;
         margin-bottom: 40px;
     }
