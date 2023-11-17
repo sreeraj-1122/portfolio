@@ -196,9 +196,12 @@
 
     .skill-list,
     .tool-list {
-gap: 0;
-        padding-left: 0px;
-        margin-bottom: 40px;
+        gap: 0;
+        padding-left: 50px;
+        margin-bottom: 43px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+
     }
 
 }
