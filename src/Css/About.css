@@ -22,7 +22,10 @@
     text-align: center;
     
 }
-.btn-hire{
+.abt-btn{
+    margin-top: 30px;
+}
+.btn-hire {
     outline: none;
     background-color: var(--btn-hire);
     font-size: 16px;
@@ -36,12 +39,13 @@
     border: none;
     border-radius: 4px;
     transition: .2s ease-in;
-
+    text-decoration: none;
 }
 .btn-hire:hover{
     background-color: rgb(207, 70, 15);
 }
 .btn-cv{
+    text-decoration: none;
     outline: none;
     background-color: transparent;
     font-size: 16px;
@@ -69,6 +73,7 @@
     }
     .btn-hire{
        width: 100%;
+       margin-bottom: 13px;
     }
     .btn-cv{
       width: 100%;
@@ -78,6 +83,12 @@
    
     .about-content{
         padding: 0 20px;
+
+    }
+    .abt-btn{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
 
     }
     

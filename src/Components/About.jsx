@@ -27,8 +27,11 @@ function About() {
               proficient in <b> HTML,CSS</b> and <b>JavaScript</b>.Currently iam
               learning <b>MERN</b> stack.
             </p>
-            <button className="btn-hire">hire me</button>
-            <button className="btn-cv">download cv</button>
+            
+           <div className="abt-btn">
+           <a href="mailto:sreeraj2122@gmail.com" className="btn-hire">hire me</a>
+            <a href="" className="btn-cv">download cv</a>
+           </div>
           </div>
         </section>
       </Container>
