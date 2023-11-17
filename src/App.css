@@ -44,13 +44,14 @@
   --bg-secondary: hsl(0, 0%, 19%);
   --color-primary: hsl(0, 0%, 100%);
   --color-secondary: hsl(0, 0%, 62%);
-  --card-shadow: hsla(0, 0%, 0%, 0.4);
+  --card-shadow: hsl(0, 0%, 0%);
   --input-bg: hsl(0, 0%, 16%);
   --shadow-1: 10px 10px 40px var(--card-shadow);
   --social-icon-color:#1b1bbb;
   --social-icon-background:#fbfbfb;
-  --btn-hire: hsl(24, 74%, 58%);
-
+  --btn-hire: hsl(24, 72%, 50%);
+  --white:hsl(0, 0%, 100%);
+  --raw-seinna: hsl(24, 74%, 58%);
 }
 .light-theme{
   --btn-hire: hsl(24, 74%, 58%);
@@ -59,10 +60,11 @@
   --bg-secondary: hsl(0, 0%, 100%);
   --color-primary: hsl(0, 0%, 12%);
   --color-secondary: hsl(0, 0%, 37%);
-  --card-shadow: hsla(0, 0%, 0%, 0.1);
+  --card-shadow: hsl(0, 16%, 94%);
   --input-bg: hsl(0, 0%, 93%);
   --shadow-1: 10px 10px 40px var(--card-shadow);
   --social-icon-color:#1c34cf;
   --social-icon-background:rgba(0, 0, 0, 0.15);
-
+  --white:hsl(0, 0%, 100%);
+  --raw-seinna: hsl(24, 74%, 58%);
 }

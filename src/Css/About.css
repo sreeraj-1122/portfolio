@@ -2,7 +2,7 @@
     text-align: center;
     color: var(--color-primary);
     width: 100%;
-    min-height: 85vh;
+    min-height: 50vh;
     padding-top: 20px;
 }
 
@@ -11,9 +11,9 @@
     font-weight: 700;
 }
 .about-content .underline{
-    width: 80px;
+    width: 95px;
     height: 5px;
-    background-color: rgb(13, 185, 185);
+    background-color: rgb(15 217 103);
     margin: auto;
     border-radius: 50px;
     margin-bottom: 10px;
@@ -35,6 +35,11 @@
     color: var(--color-primary);
     border: none;
     border-radius: 4px;
+    transition: .2s ease-in;
+
+}
+.btn-hire:hover{
+    background-color: rgb(207, 70, 15);
 }
 .btn-cv{
     outline: none;
@@ -50,6 +55,11 @@
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
     border-radius: 4px;
+    transition: .2s ease-in;
+}
+.btn-cv:hover{
+    background-color: var(--color-primary);
+    color: var(--bg-primary);
 }
 @media(max-width:425px){
     
@@ -62,9 +72,10 @@
     }
     .btn-cv{
       width: 100%;
-    margin-left: 0;
+      margin-left: 0;
 
     }
+   
     .about-content{
         padding: 0 20px;
 

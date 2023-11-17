@@ -45,7 +45,7 @@
 
 /* dark mode */
 .toggle {
-  background-color: #fff;
+  background-color: var(--color-primary);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -53,8 +53,11 @@
   place-items: center;
   cursor: pointer;
   box-shadow: 0 0 50px 20px rgba(14, 13, 13, 0.1);
+  
 }
-
+.icon svg{
+  color: var(--card-shadow);
+}
 .input-dark {
   display: none;
 }
@@ -66,7 +69,7 @@
 }
 
 .icon--moon {
-  transition-delay: 200ms;
+  transition-delay: 100ms;
 }
 
 .icon--sun {
@@ -83,6 +86,8 @@
 }
 
 
+
+
 @media(max-width: 768px) {
 
   .dark-mode {
@@ -94,7 +99,7 @@
   .nav-links {
     font-weight: 900;
     font-size: 18px;
-    padding-top: 85px;
+    padding-top: 130px;
     text-align: center;
   }
 
@@ -114,7 +119,7 @@
     color:var(--color-primary);
     font-size: 30px;
     font-weight: 700;
-    margin-left: 35px;
+    margin-left: 20px;
   }
   .dark-mode {
     position: absolute;
@@ -122,7 +127,7 @@
     right: 100px;
   }
   .toggle {
-    background-color: #fff;
+    background-color: var(--color-primary);
     width: 37px;
     height: 37px;
     border-radius: 50%;
@@ -139,7 +144,7 @@
   .nav-links {
     font-weight: 900;
     font-size: 18px;
-    padding-top: 80px;
+    padding-top: 130px;
     text-align: center;
     height: 700px;
   }
