@@ -1,16 +1,17 @@
 import React from "react";
 import "../Css/About.css";
-import pic from "../Images/sree.jpg";
 import { Container } from "react-bootstrap";
 
 function About() {
+  const handleEmail=()=>{
+     
+     window.location.href="mailto:sreeraj2122@gmail.com?subject=Hello&body=Send an mail";
+  }
   return (
     <>
       <Container>
         <section className="about">
-          {/* <div className="about-img">
-                    <img src={pic} alt="" />
-            </div> */}
+        
           <div className="about-content">
             <h2 className="about-title">About Me</h2>
             <div className="underline"></div>
@@ -27,11 +28,8 @@ function About() {
               proficient in <b> HTML,CSS</b> and <b>JavaScript</b>.Currently iam
               learning <b>MERN</b> stack.
             </p>
-            
-           <div className="abt-btn">
-           <a href="mailto:sreeraj2122@gmail.com" className="btn-hire">hire me</a>
-            <a href="" className="btn-cv">download cv</a>
-           </div>
+            <button onClick={handleEmail} className="btn-hire">hire me</button>
+            <button className="btn-cv">download cv</button>
           </div>
         </section>
       </Container>

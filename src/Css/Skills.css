@@ -1,6 +1,6 @@
 .skills {
     color: var(--color-primary);
-    min-height: 92vh;
+    min-height: 75vh;
 }
 
 .skill-title {
@@ -34,7 +34,7 @@
     text-align: left;
     margin-top: 20px;
     line-height: 1.2;
-    width: 400px;
+    width: 500px;
     margin-bottom: 20px;
     letter-spacing: 1px;
 
@@ -45,7 +45,7 @@
     font-weight: 100;
     letter-spacing: 1px;
     line-height: 1.8;
-    color: var(--color-secondary);
+    color: var(--color-primary);
     margin-bottom: 30px;
 }
 
@@ -56,11 +56,9 @@
     display: flex;
     align-items: center;
     padding: 6px;
-
     border-radius: 50px;
     width: 200px;
     height: 45px;
-
     z-index: 1;
     margin-left: 30px;
     box-shadow: 10px 10px 40px var(--bg-primary);

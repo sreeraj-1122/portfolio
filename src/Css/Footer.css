@@ -1,0 +1,27 @@
+.footer {
+    background: var(--bg-secondary);
+    color: var(--color-primary);
+    height: 70px;
+   
+}
+
+.footer-text {
+    text-align: center;
+    width: max-content;
+    font-size: 17px;
+    margin: auto;
+    padding-top: 26px;
+}
+
+.footer-text span {
+    color: var(--raw-seinna);
+    font-weight: 600;
+}
+
+@media(max-width:425px) {
+    
+    .footer-text {
+        width: 246px;
+        padding-top: 10px;
+    }
+}

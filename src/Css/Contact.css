@@ -1,0 +1,223 @@
+.contact {
+    width: 100%;
+    min-height: 90vh;
+    color: var(--color-primary);
+}
+
+.contact-title {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-line {
+    width: 95px;
+    height: 5px;
+    background-color: rgb(15 217 103);
+    margin: auto;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.contact-body {
+    display: flex;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content-title {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.2;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.content-text {
+    text-align: left;
+    font-weight: 100;
+    letter-spacing: .7px;
+    line-height: 1.8;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+    max-width: 570px;
+}
+
+.address-section {
+    display: flex;
+    align-items: center;
+}
+
+.address-icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: var(--color-primary);
+
+}
+
+.address {
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--color-primary);
+
+}
+
+.contact-content .address-text {
+    font-weight: 100;
+    letter-spacing: .7px;
+    line-height: 1.8;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    margin-left: 38px;
+
+}
+.contact-social-list{
+    display: flex;
+    margin-left: 37px;
+    padding-top: 20px;
+}
+.contact-social-links{
+    position: relative;
+    background: var(--color-primary);
+    color: var(--bg-primary);
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transition: 0.25s ease-in;
+    text-decoration: none;
+    margin-right: 10px;
+    
+}
+.contact-tooltip{
+    position: absolute;
+    top: -40px;
+    background: var(--raw-seinna);
+    min-width: max-content;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: var(--shadow-1);
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.25s ease-in;
+    z-index: 1;
+    visibility: hidden;
+    
+}
+
+.contact-social-links:hover .contact-tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+.contact-social-links:hover{
+    background-color: var(--raw-seinna);
+    color: #fff;
+}
+.social-icons{
+    font-size: 18px;
+}
+
+.form-section {
+    width: 100%;
+    padding-left:40px ;
+
+}
+
+.form {
+    background: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0px auto;
+    box-shadow: var(--shadow-1);
+    max-width: 500px;   
+}
+
+.form-label {
+    color: var(--color-primary);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    margin-left: 10px;
+}
+
+.input-wrapper {
+    background: var(--input-bg);
+    display: flex;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--raw-seinna);
+}
+
+.input-field {
+    background-color: transparent;
+    width: 100%;
+    padding: 3px;
+    color: var(--color-primary);
+    outline: none;
+    border: none;
+}
+
+.input-icon {
+    font-size: 20px;
+    color: var(--color-primary);
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+textarea.input-field {
+    min-height: 60px;
+    height: 120px;
+    max-height: 200px;
+    resize: vertical;
+}
+
+.contact-btn {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--bg-primary);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+@media(max-width:425px) {
+    .contact{
+        padding: 0 20px;
+    }
+    .contact-body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+    }
+    .content-title {
+        font-size: 30px;
+        text-align: left;
+        width: 340px;
+    }
+    .content-text {
+        max-width: 350px;
+    }
+    .contact-social-list{
+       
+        padding-top: 0px;
+    }
+    .form-section {
+        padding-left:0px ;
+    
+    }
+    .form {
+        margin: 30px auto;
+    }
+   
+    
+}
