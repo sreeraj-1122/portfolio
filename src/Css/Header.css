@@ -2,6 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 3;
+  text-decoration: none;
+
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   --bs-gutter-x: 0;
@@ -19,11 +21,14 @@
 .nav-links {
   font-weight: 900;
   font-size: 18px;
+  text-decoration: none;
+
 }
 
 .nav-items {
   color: var(--color-primary);
   margin-left: 15px;
+  text-decoration: none;
 }
 
 .logo {
@@ -37,10 +42,13 @@
 }
 
 .nav-items:hover {
-  border-bottom: 1px solid #fff;
-  color: rgb(255, 255, 0)
+  color: yellow;
 }
-
+.active{
+  color: yellow;
+  border-bottom:3px solid yellow ;
+  text-decoration: none ;
+}
 
 
 /* dark mode */

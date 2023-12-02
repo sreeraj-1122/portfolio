@@ -6,6 +6,7 @@ import { BsTwitter } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { Container } from "react-bootstrap";
+import { FaGithub } from "react-icons/fa6";
 function Home() {
   return (
     
@@ -28,8 +29,8 @@ function Home() {
             <a href="https://www.facebook.com/sreerajk.ponnamkaya.5?mibextid=ZbWKwL">
               <BsFacebook />
             </a>
-            <a href="www.twitter.com">
-              <BsTwitter />
+            <a href="https://github.com/sreeraj-1122">
+              <FaGithub />
             </a>
             <a href="https://www.secure.instagram.com/_sree__raj._/">
               <AiFillInstagram />

@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "../Css/Header.css";
 import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Link } from "react-scroll";
 
 function Header() {
   const [theme, setTheme] = useState("dark-theme");
-  const changeTheme=() => {
-      theme==="dark-theme"?setTheme("light-theme"):setTheme("dark-theme")
-  }
-  useEffect(()=>{
-    document.body.className=theme;
-  },[theme])
+  const changeTheme = () => {
+    theme === "dark-theme" ? setTheme("light-theme") : setTheme("dark-theme");
+  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
   return (
-    <div className="header" >
+    <div className="header">
       <Navbar expand="lg" className="nav">
         <Container>
           <Navbar.Brand href="#home" className="logo">
@@ -21,26 +22,33 @@ function Header() {
           <Navbar.Toggle aria-controls id="basic-navbar-nav" className="menu" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto nav-links">
-              <Nav.Link href="#home" className="nav-items">
-                Home
+              <Nav.Link className="nav-items">
+                <Link to="home" activeClass="active" spy={true} smooth={true} offset={-100} duration={500} >
+                  Home
+                </Link>
               </Nav.Link>
               <Nav.Link href="#link" className="nav-items">
-                About
+                <Link to="about"activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>About</Link>
               </Nav.Link>
               <Nav.Link href="#link" className="nav-items">
-                Skills
+                <Link to="skills"activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>Skills</Link>
               </Nav.Link>
               <Nav.Link href="#link" className="nav-items">
-                Portfolio
+                <Link to="projects" activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>Portfolio</Link>
               </Nav.Link>
               <Nav.Link href="#link" className="nav-items">
-                Contact
+                <Link to="contact"activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>Contact</Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
           <div className="dark-mode">
             <label className="toggle" htmlFor="switch">
-              <input id="switch" className="input-dark" type="checkbox"  onClick={changeTheme}></input>
+              <input
+                id="switch"
+                className="input-dark"
+                type="checkbox"
+                onClick={changeTheme}
+              ></input>
               <div className="icon icon--moon">
                 <svg
                   height="30"
