@@ -91,7 +91,7 @@ function Contact() {
                         <label htmlFor="" className="form-label">Name</label>
                         <div className="input-wrapper">
                         <FaCircleUser className="input-icon" />
-                            <input type="text" name="from_name" className="input-field" placeholder="e.g John Doe" />
+                            <input type="text" name="from_name" className="input-field" placeholder="e.g John Doe" required/>
                         </div>
                     </div>
                     <div className="form-wrapper">
@@ -99,21 +99,21 @@ function Contact() {
                         <div className="input-wrapper">
                         <MdEmail className="input-icon" />
 
-                            <input type="email" name="from_email" className="input-field" placeholder="e.g johndoe@gmail.com"/>
+                            <input type="email" name="from_email" className="input-field" placeholder="e.g johndoe@gmail.com" required/>
                         </div>
                     </div>
                     <div className="form-wrapper">
                         <label htmlFor="" className="form-label">Phone</label>
                         <div className="input-wrapper">
                         <FaPhoneAlt className="input-icon" />
-                            <input type="text" name="from_number" className="input-field" placeholder="Phone number" />
+                            <input type="text" name="from_number" className="input-field" placeholder="Phone number" required />
                         </div>
                     </div>
                     <div className="form-wrapper">
                         <label htmlFor="" className="form-label">Message</label>
                         <div className="input-wrapper">
                         <RiMessage2Fill className="input-icon" />
-                           <textarea name="message" id=""className="input-field" placeholder="Write message"></textarea>
+                           <textarea name="message" id=""className="input-field" placeholder="Write message" required></textarea>
                         </div>
                     </div>
                     
