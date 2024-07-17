@@ -34,7 +34,7 @@ function Header() {
                 <Link to="skills"activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>Skills</Link>
               </Nav.Link>
               <Nav.Link href="#link" className="nav-items">
-                <Link to="projects" activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>Portfolio</Link>
+                <Link to="projects" activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>Projects</Link>
               </Nav.Link>
               <Nav.Link href="#link" className="nav-items">
                 <Link to="contact"activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>Contact</Link>

@@ -1,4 +1,4 @@
-.about{
+.about {
     text-align: center;
     color: var(--color-primary);
     width: 100%;
@@ -6,11 +6,12 @@
     padding-top: 20px;
 }
 
-.about-content .about-title{
+.about-content .about-title {
     font-size: 35px;
     font-weight: 700;
 }
-.about-content .underline{
+
+.about-content .underline {
     width: 95px;
     height: 5px;
     background-color: rgb(15 217 103);
@@ -18,11 +19,13 @@
     border-radius: 50px;
     margin-bottom: 25px;
 }
-.about-me{
+
+.about-me {
     text-align: center;
-    
+    margin-bottom: 20px;
 }
-.btn-hire{
+
+.btn-hire {
     outline: none;
     background-color: var(--btn-hire);
     font-size: 16px;
@@ -31,17 +34,19 @@
     letter-spacing: 0.5px;
     padding: 10px 25px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: var(--color-primary);
     border: none;
     border-radius: 4px;
     transition: .2s ease-in;
 
 }
-.btn-hire:hover{
+
+.btn-hire:hover {
     background-color: rgb(207, 70, 15);
 }
-.btn-cv{
+
+.btn-cv {
     outline: none;
     background-color: transparent;
     font-size: 16px;
@@ -50,35 +55,39 @@
     letter-spacing: 0.5px;
     padding: 9px 25px;
     cursor: pointer;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    margin-bottom: 30px;
+     margin-left: 20px;
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
     border-radius: 4px;
     transition: .2s ease-in;
 }
-.btn-cv:hover{
+
+.btn-cv:hover {
     background-color: var(--color-primary);
     color: var(--bg-primary);
 }
-@media(max-width:425px){
-    
-    .about-me{
+
+@media(max-width:425px) {
+
+    .about-me {
         text-align: justify;
-        
-    }
-    .btn-hire{
-       width: 100%;
-    }
-    .btn-cv{
-      width: 100%;
-      margin-left: 0;
 
     }
-   
-    .about-content{
+
+    .btn-hire {
+        width: 100%;
+    }
+
+    .btn-cv {
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .about-content {
         padding: 0 20px;
 
     }
-    
+
 }

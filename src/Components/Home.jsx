@@ -17,7 +17,7 @@ function Home() {
           <h3>Hello, </h3>
 
           <h1>
-            I'm <span>Sreeraj</span>
+            I'm <span>SREERAJ K</span>
           </h1>
           <h1>Full stack developer</h1>
           <p>

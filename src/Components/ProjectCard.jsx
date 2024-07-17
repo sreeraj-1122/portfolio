@@ -6,11 +6,11 @@ function ProjectCard({slice}) {
     {slice.map((value,index)=>(
         <>
         <div className='project-main-card shadow bg-body ' key={value.id}>
-        <a href={value.url} className="project-card">
+        <a href={value.url} className="project-card" target="_blank" rel="noopener noreferrer">
             <img src={value.image} alt="" />
             <div className="card-content">
                 <h3 className='card-title'>{value.title}</h3>
-                <div className="publish-date">{value.date}</div>
+                {/* <div className="publish-date">{value.date}</div> */}
             </div>
         </a>
         

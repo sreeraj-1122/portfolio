@@ -9,9 +9,37 @@ import pic8 from '../Images/calc.png'
 import pic9 from '../Images/yt.png'
 import pic10 from '../Images/mypro.png'
 import pic11 from '../Images/login.png'
+import pic13 from '../Images/food.png'
+import pic12 from '../Images/blog.png'
+import pic14 from '../Images/todo dashboard.png'
+import pic15 from '../Images/weather.png'
 
 export  const projectData=[
 
+    {
+        id:13,
+        url:'https://food-delivery-application1.netlify.app/',
+        image:[pic13],
+        title:'Food delivery app',
+    },
+    {
+        id:12,
+        url:'https://my-blogs11.netlify.app/',
+        image:[pic12],
+        title:'Blog app',
+    },
+    {
+        id:14,
+        url:'https://todo-app-netilify.netlify.app/',
+        image:[pic14],
+        title:'Todo app',
+    },
+    {
+        id:15,
+        url:'https://github.com/sreeraj-1122/weather-application.git',
+        image:[pic15],
+        title:'Weather App',
+    },
     {
         id:1,
         url:'https://sreeraj-1122.github.io/login-signup-page/',

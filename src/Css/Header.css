@@ -19,7 +19,7 @@
   border-bottom:none
 }
 .nav-links {
-  font-weight: 900;
+  font-weight: 500;
   font-size: 18px;
   text-decoration: none;
 
@@ -42,11 +42,11 @@
 }
 
 .nav-items:hover {
-  color: yellow;
+  color: rgb(255, 77, 0);
 }
 .active{
-  color: yellow;
-  border-bottom:3px solid yellow ;
+  color:rgb(255, 77, 0);
+  border-bottom:3px solid rgb(255, 77, 0) ;
   text-decoration: none ;
 }
 
